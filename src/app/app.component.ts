@@ -13,7 +13,6 @@ export class AppComponent {
   title = 'assignment-4';
   str: string = '';
   sendData(value: string) {
-    console.log(value);
     this.str = value;
   }
 }
