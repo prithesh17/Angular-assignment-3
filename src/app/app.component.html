@@ -1,6 +1,13 @@
+<div class="parent-container">
 <h1>Assignment-3</h1>
-<h2>Task </h2>
-<p> Create a input type text in parent, take username as input pass the input to child then check if it is equal to Predefined Username if yes print something in h1 p tag</p>
+<h2>Task 1</h2>
+<p>Parent inputs username, passes it to child. Child checks if it matches predefined username, then displays content accordingly.</p>
 <input type="text" id="username" name="username" placeholder="Enter your username" #username>
-<button (click) = sendData(username.value)>Click</button>
+<button (click) = sendUsername(username.value)>Click</button>
 <app-child [data]="str"></app-child>
+<h2>Task 2</h2>
+<p>Parent passes font size data to child via input. Child uses custom directive to adjust font size accordingly.</p>
+<input type="text" id="font-size" name="font-size" placeholder="Enter the font size" #fontSize>
+<button (click) = sendFontsize(fontSize.value)>Submit</button>
+<app-child-for-font [size]="size"></app-child-for-font>
+</div>

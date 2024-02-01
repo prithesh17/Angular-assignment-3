@@ -9,9 +9,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ChildComponent {
   @Input() data: string = '';
-
   userName: string = "Prithesh";
-
   verifyUser(data: string): boolean {
     return data === this.userName;
   }
