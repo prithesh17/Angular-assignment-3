@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './child.component.css'
 })
 export class ChildComponent {
-  @Input() data: string = '';
+  @Input() data: string='';
   userName: string = "Prithesh";
   verifyUser(data: string): boolean {
     return data === this.userName;

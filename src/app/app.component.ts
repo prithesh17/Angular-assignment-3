@@ -12,7 +12,7 @@ import { ChildForFontComponent } from './child-for-font/child-for-font.component
 })
 export class AppComponent {
   title = 'assignment-4';
-  str: string = '';
+  str: string ='';
   sendUsername(value: string) {
     this.str = value;
   }

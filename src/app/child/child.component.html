@@ -1,4 +1,9 @@
-<p *ngIf="verifyUser(data)">
+<div *ngIf="data != ''">
+<p id="green" *ngIf="verifyUser(data)">
     Welcome, {{ data }}! 
     Username Verification Successful!
 </p>
+<p id="red" *ngIf="!verifyUser(data)">
+    Verification Failed, Try Again !!
+</p>
+</div>
